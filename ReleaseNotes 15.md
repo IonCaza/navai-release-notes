@@ -1,49 +1,33 @@
 <div align="center">Upcoming Release Notes for <b>27 October 2025</b></div>
-<div align="center">Release Version: <b>14</b></div>
+<div align="center">Release Version: <b>15</b></div>
 
 This communication is to notify users of NAV AI of enhancements made to the application on a biweekly basis. For questions please contact (deliverer@accenture.com) Deliverer.  
 _Please reference the attachment for additional photos of the features and enhancements._
 
 **Additional Enhancements**
-- Chat response pane now auto-scrolls to the latest question and response.
-   - The chat interface has been updated to automatically scroll to the latest response, ensuring users can view new messages immediately. A button has also been added to allow users to jump directly to the bottom of the page.
-- A dynamic button allows users to jump to the bottom of the chat.
-   - When scrolling up in a conversation, users can now use a button to quickly navigate to the bottom of the chat, improving usability.
-- Exported Word and PowerPoint documents now include an automatic footer.
-   - Exported files now display a footer with the text "Created using Accenture NAV AI Digital Team [Agent Name] [datetime]" for branding consistency.
-- Export buttons have been relocated for better usability.
-   - The Export to Word, PPT, and Excel buttons have been moved to a dropdown menu to free up space in the chat interface.
-- Agent action buttons have been relocated for improved interface clarity.
-   - Agent action buttons are now accessible via a dropdown menu, reducing clutter in the chat interface.
-- Reference Data has been renamed to Data Marketplace.
-   - The term "Reference Data" has been updated to "Data Marketplace" across the application for improved clarity and consistency.
-- Agent configuration page buttons have been renamed and reordered.
-   - Interface buttons on the Agent Configuration page have been renamed and reorganized for better usability, with related items grouped under a new "Agent Customization" section.
-- EQTY-related elements are now hidden when disabled.
-   - EQTY-related features are only displayed when the "isEqtyEnabled" variable is set to true, ensuring a cleaner interface for users without EQTY enabled.
-- Release Notes visibility is now configurable.
-   - Administrators can now enable or disable the Release Notes menu item based on an environment variable, allowing for tailored user experiences.
-- Predefined system prompts now include a pop-up view.
-   - Users can view all predefined system prompts in a pop-up window, making it easier to select prompts when there are many options.
-- Error messages have been improved for clarity.
-   - User-facing error messages have been rewritten in plain language to ensure they are clear, actionable, and free of technical jargon.
-- Conversation history now supports deep linking.
-   - Users can now navigate directly to a specific conversation via a deep link, improving accessibility and navigation.
-- Release Notes markdown format has been standardized.
-   - The Release Notes markdown display has been updated to ensure consistency across all environments and themes.
-- @react-pdf library replaced with free alternatives.
-   - The commercial @react-pdf library has been replaced with free alternatives, leveraging browser-native PDF rendering capabilities.
+- The chat response pane now automatically scrolls to the latest question and response, ensuring users can immediately view new content. A button has been added to allow users to jump directly to the bottom of the page for convenience.
+- A dynamic button has been introduced to allow users to quickly scroll to the bottom of the chat when navigating through previous messages.
+- Exported Word and PowerPoint documents now include an automatic footer with branding and metadata, excluding Excel files.
+- Export buttons for Word, PowerPoint, and Excel have been relocated to a dropdown menu to optimize conversation space.
+- Agent action buttons have been relocated to a dropdown menu to reduce clutter in the chat interface. These changes are deployed alongside the export button relocation.
+- The "Reference Data" section has been renamed to "Data Marketplace," and related labels have been updated for consistency.
+- The Agent Configuration page has been reorganized to improve usability by renaming and reordering interface buttons. Key features are now grouped under a new "Agent Customization" section.
+- EQTY-related elements are now hidden in the interface when the EQTY feature is disabled.
+- A configuration option has been added to enable or disable the Release Notes menu item based on an environment variable.
+- Predefined system prompts in the chat now include a pop-up option, allowing users to view all prompts at once for easier selection.
+- Users can now edit or view information about system prompts directly within the Edit Agent window, streamlining the agent customization process.
+- The Release Notes feature now supports a standardized markdown format that adapts to light and dark themes for consistent display across environments.
+- A deep linking feature has been added to allow users to navigate directly to specific conversation histories from external applications or links.
+- The @react-pdf library has been replaced with alternative solutions to avoid licensing issues while maintaining core PDF rendering functionality.
+- Security vulnerabilities in the Mermaid and tmp libraries have been resolved to enhance application security.
 
 **Bugs Fixed**
-- Deleting a file no longer triggers multiple calls.
-- Inconsistent error messages in the frontend have been resolved.
-- Datasets now refresh correctly after deletion.
-- The Import button has been removed from the Edit Agent interface.
-- The agent chat box now renders at the correct size.
-- Agent background images now display as expected.
-- The Model Selection dropdown is now disabled after creating a standalone conversation.
-- Collapsing datasets no longer causes glitches.
-- File upload text no longer appears in the wrong window.
-- Resolved a vulnerability in Mermaid 11.8.1 that allowed cross-site scripting (XSS).
-- Resolved a vulnerability in tmp/0.2.3 that allowed symbolic link exploitation.
-- Addressed a transitive dependency issue with axios 1.9.0 by upgrading to axios 1.12.2.
+- Resolved an issue where deleting a file triggered multiple unnecessary calls.
+- Fixed inconsistent error messages in the frontend interface.
+- Addressed an issue where deleted datasets were not refreshing correctly in the interface.
+- Removed the "Import" button from the Edit Agent page.
+- Fixed a bug where the agent chat box size was not rendering correctly.
+- Resolved an issue where agent background images were not being displayed.
+- Disabled the model selection dropdown in the chat interface after a standalone conversation is created.
+- Fixed a glitch causing the collapse functionality for datasets to behave incorrectly.
+- Resolved an issue where file upload text was displayed in the wrong window.
