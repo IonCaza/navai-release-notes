@@ -6,4 +6,4 @@ _Please reference the attachment for additional photos of the features and enhan
 
 **Features Released**
 - Refactor Release  
-  - The user interface has been modernized with a cohesive design system, improved navigation, and faster performance across devices. Application settings now support custom fonts, logos, branded footers, and theme defaults for better personalization. A new Registry page consolidates key tools and components, while translations have been enhanced for consistency and accuracy. Release notes are now clearer, and agent action buttons have been removed for simplicity.
+  - The user interface has been modernized with a cohesive design system, improved navigation, and faster performance across devices. Application settings have been redesigned for easier customization, including options for fonts, logos, and themes. A new Registry page consolidates key tools and components, while translation improvements enhance consistency and accuracy across supported languages. Release notes are now clearer, and agent action buttons have been removed for a streamlined experience.
