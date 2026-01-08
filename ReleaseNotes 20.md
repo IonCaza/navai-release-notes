@@ -1,67 +1,65 @@
-<div align="center">Upcoming Release Notes for <b>31 December 2025</b></div>
+<div align="center">Upcoming Release Notes for <b>08 January 2026</b></div>
 <div align="center">Release Version: <b>Release version 20</b></div>
 
 This communication is to notify users of NAV AI of enhancements made to the application on a biweekly basis.
 _Please reference the attachment for additional photos of the features and enhancements._
 
 **Features Released**
-- Agents with Functional Tools
-  - Agents now include built-in function tools under a single Agents tab, consolidating Assistants and Utility Agents into one streamlined experience; existing utility agents remain usable with limited capabilities.
+- Agents can use Functional Tools
+  - Create agents with built-in function tools, removing the need for separate utility agents; all new and ported agents appear under a unified Agents tab, with existing utility agents remaining usable.
 - Agent Chat Worksheet
-  - Users can capture and organize AI-generated content into persistent, interactive worksheets that survive beyond the original conversation or agent, with full create, read, update, and delete capabilities to support collaboration and continuity.
-- User Legal Notices
-  - Legal disclaimers now appear during NAV AI registration for internal users, and the Accenture Privacy Statement link is available in the customizable NAV AI footer.
+  - Pin important AI responses into persistent worksheets, create and manage them across sessions, and collaborate with teammates, preserving context beyond the originating conversation.
+- Internal User Legal Notices
+  - Legal disclaimers now appear during NAV AI registration and require acknowledgment; the Accenture Privacy Statement is persistently available via the customizable NAV AI footer.
 - User Communication Banner 
-  - Administrators can create and manage a global banner visible across screens; users can dismiss viewed messages, and new or multiple messages are presented with a mechanism to review all content.
-
-**Additional Enhancements**
-- Improve Llama 4 model consistency across agents for predictable interactions.
-  - Aligns Llama 4 behavior with prior model expectations to deliver a seamless, reliable agent experience.
+  - Administrators can create and manage a global banner that displays across screens and surfaces new updates prominently to users.
 
 **Bugs Fixed**
 - Preview section disappears when user tries to Download/Update/Delete a dataset
-  - Ensured the dataset preview remains visible during download, update, and delete actions.
+  - Fixed a UI issue where the dataset preview vanished during download, update, or delete actions; the preview now remains visible.
 - Sharing data source pop up text overlaps with 'X'.
-  - Corrected layout so pop-up text no longer overlaps the close button.
+  - Resolved overlapping text in the share data source dialog so the close button remains clear and clickable.
 - 'X' button in workspace creation in tags moves lower when tags are added
-  - Fixed close button alignment when tags are added during workspace creation.
+  - Corrected layout shifting in workspace creation; the close button stays aligned when tags are added.
 - Share workspace - inconsistency in naming
-  - Standardized naming across Share Workspace dialogs and prompts.
+  - Standardized naming throughout the share workspace experience for clarity and consistency.
 - Uploading a tall image as Agent logo blocks buttons
-  - Enforced logo sizing to prevent UI buttons from being blocked by tall images.
+  - Constrained agent logo display so tall images no longer cover action buttons.
 - Share Workspace: wrong dialog title
-  - Corrected the Share Workspace dialog title.
+  - Fixed incorrect dialog titles in share workspace workflows.
 - EQTY shield flashes red before green
-  - Stabilized the EQTY shield to prevent erroneous red flashes before showing green.
+  - Eliminated transient red flash; the EQTY shield now reflects the correct status color.
 - The agent details icon from chat box can be disabled in case of standalone chat.
-  - Prevented unintended disabling of the agent details icon in standalone chat.
+  - Fixed incorrect disabling of the agent details icon in standalone chat sessions.
 - Dataset details hidden
-  - Restored visibility for dataset details.
+  - Restored visibility of dataset details in the UI.
 - Document added to chat agent via Add-data-to this conversation is not being displayed in the chat window
-  - Ensured documents added to a conversation display properly in the chat window.
+  - Ensured documents added to a conversation appear correctly in the chat window.
 - Data Source API Returns Empty ingestedFiles After Upload
-  - Fixed the API to return ingestedFiles correctly after uploads.
+  - Corrected the API response to return populated ingestedFiles after uploads.
 - Add tool required fields
-  - Clearly indicated and enforced required fields in the Add Tool flow.
+  - Fixed validation and prompts for required fields when adding tools.
 - Nav.AI Template my template size issue
-  - Resolved sizing issues for the “My Template” view.
+  - Resolved sizing issues affecting My Template so content renders correctly.
 - After deleting Nav.AI Template the details are not cleared
-  - Cleared template details immediately after deletion.
+  - Cleared residual details after template deletion to prevent stale information.
 - Roles table doesn't have people's e-mail address
-  - Added email addresses to the Roles table.
+  - Added missing email addresses to the Roles table.
 - Governance disabled when created new agent
-  - Ensured governance remains enabled when creating new agents.
+  - Corrected governance settings so new agents are created with the intended governance state.
 - File import fails from demo2 env to dev
-  - Resolved file import failures between demo2 and dev environments.
+  - Resolved cross-environment file import failures from demo2 to dev.
 - Something went wrong message is coming when click on SuperAgent for the second time
-  - Prevented erroneous error messages when opening a SuperAgent a second time.
+  - Fixed intermittent errors when opening a SuperAgent a second time.
 - UI issue on existing Agent Detail page
-  - Fixed layout and visual defects on the Agent Detail page.
+  - Addressed layout and display issues on the Agent Detail page.
 - Major chat message formatting
-  - Restored consistent Markdown rendering with system-defined styles for clearer, more readable chat messages.
+  - Restored consistent Markdown rendering and styling for chat messages to improve readability.
 - Upload and Process button gets disabled on upload a file to a new super agent conversation
-  - Ensured the Upload and Process button remains available after file upload in new SuperAgent conversations.
+  - Prevented premature button disabling; Upload and Process remains enabled and functions after file upload.
 - The custom greeting and default greeting are shown together on a single line without spacing or line break.
-  - Corrected greeting formatting to include proper spacing and line breaks.
+  - Corrected greeting formatting so messages display with proper spacing or line breaks.
 - Super-agent conversation not working after worksheet changes
-  - Restored SuperAgent conversation functionality following worksheet updates.
+  - Fixed conversation failures after worksheet modifications.
+- Without selecting any Worksheet from click on Select button,System is showing Black screen with Type Error
+  - Prevented errors when no worksheet is selected; the system now continues without a black screen.
