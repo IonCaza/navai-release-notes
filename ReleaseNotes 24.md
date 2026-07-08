@@ -46,5 +46,3 @@ Admins can now run multiple banner notifications at once, letting them prepare f
 
 - **CSV and Excel drag & drop:** Previously, the LLM's "Select Supported Inputs" setting controlled which file types the chat window accepted, so CSV and Excel files could only be added when the "TEXT" input was enabled—and that setting also let through other file types the backend silently ignored, giving the impression the model was hallucinating. Drag & drop of CSV and Excel files is now always allowed, independent of the "Select Supported Inputs" setting. 
 - **RAG file usage:** Fixed a bug where an agent failed to use files uploaded as RAG when asked about them in chat.
-
-Would you like this saved as a file, or do you want to copy and use it directly? If you need further formatting or export options, just let me know!
